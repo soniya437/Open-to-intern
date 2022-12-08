@@ -15,8 +15,8 @@ export default function Home() {
   const location = typeof window != "undefined" ? window?.location : {}
   const { hostname } = location
   const [a, b, _] =  hostname?.split('.') || []
-  const collegeName = process.env.NODE_ENV === "production" ?  (a === 'www'? b : a) : 'iitd'
-  // console.log({ router ,location, hostname , collegeName, a, b, env:process.env.NODE_ENV})
+  const collegeName = process.env.NODE_ENV === "production" ?  (a === 'www'? b : a) : 'gcw'
+  
 
   useEffect(() => {
       async function fetchCollegeDetails() {
